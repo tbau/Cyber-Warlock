@@ -1,0 +1,58 @@
+{
+  "name": "cyber_warlock",
+  "main": "index.html",
+  "description": "cyberwarlock web game",
+  "version": "0.1.0",
+  "scripts": {
+    "watch": "webpack --watch --mode development",
+    "build": "webpack --mode development",
+    "start": "node server/app.js",
+    "dev": "nodemon server/app.js",
+    "nw-start": "..\\nwjs-v0.38.2-win-x64\\nw.exe ."
+  },
+  "keywords": [
+    "cyberwarlock",
+    "wizard",
+    "warlock",
+    "cyber",
+    "fantasy",
+    "rpg"
+  ],
+  "window": {
+    "title": "Cyber Warlock",
+    "icon": "dragon.png",
+    "width": 800,
+    "height": 450
+  },
+  "maintainers": [
+    {
+      "name": "Thomas Bau",
+      "email": "tbau11508@gmail.com"
+    }
+  ],
+  "webkit": {
+    "plugin": true
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.2",
+    "recoil": "^0.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-react": "^7.16.7",
+    "@types/react": "^17.0.39",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.7.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "nodemon": "^2.0.15",
+    "nodemon-webpack-plugin": "^4.7.1",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}

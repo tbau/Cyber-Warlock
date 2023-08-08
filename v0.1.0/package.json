@@ -1,0 +1,20 @@
+{
+  "name": "cyber warlock",
+  "main": "index.html",
+  "description": "cyberwarlock web game",
+  "version": "0.1.0",
+  "keywords": [ "cyberwarlock", "wizard","warlock","cyber","fantasy","rpg"],
+  "window": {
+ 	"title": "Cyber Warlock",
+	"icon": "dragon.png",
+    "width": 800,
+    "height": 450
+  },
+  "maintainers":[ {
+   "name": "Thomas Bau",
+   "email": "tbau11508@gmail.com" 
+}],
+  "webkit": {
+    "plugin": true
+  }
+}	
