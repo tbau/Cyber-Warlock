@@ -37,15 +37,12 @@ To run the app, there are 3 steps
 <img src="screenshots/example3.png" width="100">
 <img src="screenshots/example4.png" width="100">
 <img src="screenshots/example5.png" width="100">
-
 <img src="screenshots/example6.png" width="100">
 <img src="screenshots/example7.png" width="100">
 <img src="screenshots/example8.png" width="100">
 <img src="screenshots/example9.png" width="100">
-
 <img src="screenshots/example10.png" width="100">
 <img src="screenshots/example11.png" width="100">
-
 <img src="screenshots/example12.png" width="100">
 <img src="screenshots/example13.png" width="100">
 <img src="screenshots/example14.png" width="100">
