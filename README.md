@@ -32,23 +32,21 @@ To run the app, there are 3 steps
 * With the inventory open, W,A,S,D or Arrow Keys select each menu item
 
 ## Screenshots
+<img src="screenshots/example1.png" width="400"><br><br>
+<img src="screenshots/example2.png" width="400"><br><br>
+<img src="screenshots/example3.png" width="100">
+<img src="screenshots/example4.png" width="100">
+<img src="screenshots/example5.png" width="100">
 
-<img src="example1.png" width="400"><br><br><br>
-<img src="example2.png" width="400"><br><br><br>
-<img src="example3.png" width="100">
-<img src="example4.png" width="100">
-<img src="example5.png" width="100"><br>
+<img src="screenshots/example6.png" width="100">
+<img src="screenshots/example7.png" width="100">
+<img src="screenshots/example8.png" width="100">
+<img src="screenshots/example9.png" width="100">
 
-<img src="example6.png" width="100">
-<img src="example7.png" width="100">
-<img src="example8.png" width="100">
-<img src="example9.png" width="100"><br>
+<img src="screenshots/example10.png" width="100">
+<img src="screenshots/example11.png" width="100">
 
-
-<img src="example10.png" width="100">
-<img src="example11.png" width="100">
-
-<img src="example12.png" width="100">
-<img src="example13.png" width="100">
-<img src="example14.png" width="100">
-<img src="example15.png" width="100">
+<img src="screenshots/example12.png" width="100">
+<img src="screenshots/example13.png" width="100">
+<img src="screenshots/example14.png" width="100">
+<img src="screenshots/example15.png" width="100">
