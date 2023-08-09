@@ -19,12 +19,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: npm build
-      working-directory: ./v0.2.0
       run: |
-        cd  ./v0.2.0
+        cd v0.2.0
         npm install
         npm run build
     - uses: actions/upload-artifact@v2
       with:
          name: build-artifact
-         path: ./v0.2.0/dist
+         path: v0.2.0/dist
