@@ -1,3 +1,4 @@
+name: Pipeline
 on:
     push:
       branches: [ "dev" ]   
@@ -8,7 +9,7 @@ jobs:
         steps:
          - uses: actions/checkout@v3
     call-workflow1:
-        uses: ./.github/workflows/build-dist.yaml
+        uses: ./.github/workflows/build-dist.yml
     call-workflow2:
         needs: call-workflow1
-        uses: ./.github/workflows/deploy-site.yaml
+        uses: ./.github/workflows/deploy-site.yml
