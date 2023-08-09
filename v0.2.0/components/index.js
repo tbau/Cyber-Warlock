@@ -7,7 +7,7 @@ import App from "./App";
 const appRouting = (
   <Router>
     <Routes>
-      <Route path={`${window.location.pathname}/`} element={<App/>} />
+      <Route path={`${window.location.pathname}`} element={<App/>} />
     </Routes>
   </Router>
 );
