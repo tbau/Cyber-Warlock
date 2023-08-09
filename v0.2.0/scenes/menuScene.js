@@ -1,4 +1,13 @@
 import AnimationManager from '../managers/animationManager';
+import map00 from "../images/Maps/map00.png";
+import hudBar  from "../images/Buch/hudBar.png";
+import hudBarHealth from  "../images/Buch/hudBarHealth.png";
+import hudBarStamina from "../images/Buch/hudBarStamina.png";
+import hudBarMana from "../images/Buch/hudBarMana.png";
+import hudMap from "../images/Buch/hudMap.png";
+import hudMenu from "../images/Buch/hudMenu.png";
+import wizard from "../images/FiveAsOne/wizard-copy.png";
+import spells from "../images/FiveAsOne/animations.png";
 
 class menuScene extends Phaser.Scene {
     constructor() {
@@ -13,20 +22,17 @@ class menuScene extends Phaser.Scene {
     }
 
     preload = function () {
-        this.load.image("map00", "images/Maps/map00.png");
+        this.load.image("map00", map00);
+        this.load.image("hudBar", hudBar);
+        this.load.image("hudBarHealth", hudBarHealth);
+        this.load.image("hudBarStamina", hudBarStamina);
+        this.load.image("hudBarMana", hudBarMana);
 
-        this.load.image("hudBar", "images/Buch/hudBar.png");
-        this.load.image("hudBarHealth", "images/Buch/hudBarHealth.png");
-        this.load.image("hudBarStamina", "images/Buch/hudBarStamina.png");
-        this.load.image("hudBarMana", "images/Buch/hudBarMana.png");
+        this.load.image("hudMap", hudMap);
+        this.load.image("hudMenu", hudMenu);
 
-
-        this.load.image("hudMap", "images/Buch/hudMap.png");
-        this.load.image("hudMenu", "images/Buch/hudMenu.png");
-
-        this.load.spritesheet("dude", "images/dude.png", { frameWidth: 32, frameHeight: 48 });
-        this.load.spritesheet("wizard", "images/FiveAsOne/wizard-copy.png", { frameWidth: 100, frameHeight: 100 });
-        this.load.spritesheet("spells", "images/FiveAsOne/animations.png", { frameWidth: 100, frameHeight: 100 });
+        this.load.spritesheet("wizard", wizard, { frameWidth: 100, frameHeight: 100 });
+        this.load.spritesheet("spells", spells, { frameWidth: 100, frameHeight: 100 });
 
     };
 

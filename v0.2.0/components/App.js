@@ -75,7 +75,6 @@ const App = () => {
 
     let game = new Phaser.Game(config);
     game.scene.start('Play', { width: 1600, height: 800, uiManager });
-
     return (
         <RecoilRoot>
             <input id="upload_input"

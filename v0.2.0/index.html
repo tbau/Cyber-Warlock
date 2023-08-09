@@ -1,87 +1,86 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-  <title>Cyber Warlock</title>
-  <meta charset="utf-8">
-  <meta content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"
-        name="viewport">
-  <meta content="yes"
-        name="apple-mobile-web-app-capable">
-  <meta content="black-translucent"
-        name="apple-mobile-web-app-status-bar-style">
+        <title>Cyber Warlock</title>
+        <meta charset="utf-8">
+        <meta content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0"
+                name="viewport">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
 </head>
+
 <body>
-  <div id="root"></div>
-  <div id="phaser-app"
-       style="width:100%;height:100%"></div>
-  <style>
+        <div id="root"></div>
+        <div id="phaser-app" style="width:100%;height:100%"></div>
+        <style>
+                body {
+                        /* cursor: url("./images/Buch/mouseCursor1.png"), auto; */
+                }
 
-                        body {
-                                cursor: url("images/Buch/mouseCursor1.png"), auto;
-                        }
+                #stage {
+                        position: relative;
+                        width: 480px;
+                        height: 150px;
+                }
 
-                        #stage {
-                                position: relative;
-                                width: 480px;
-                                height: 150px;
-                        }
+                canvas {
+                        position: fixed;
+                }
 
-                        canvas {
-                                position: fixed;
-                        }
+                #ui-layer {
+                        z-index: 3;
+                }
 
-                        #ui-layer {
-                                z-index: 3;
-                        }
+                #game-layer {
+                        z-index: 2;
+                }
 
-                        #game-layer {
-                                z-index: 2;
-                        }
+                #background-layer {
+                        z-index: 1;
+                }
 
-                        #background-layer {
-                                z-index: 1;
-                        }
+                div:-webkit-full-screen>canvas {
+                        width: 100% !important;
+                        height: 100% !important;
+                }
 
-                        div:-webkit-full-screen>canvas {
-                                width: 100% !important;
-                                height: 100% !important;
-                        }
+                div:-moz-full-screen>canvas {
+                        width: 100% !important;
+                        height: 100% !important;
+                }
 
-                        div:-moz-full-screen>canvas {
-                                width: 100% !important;
-                                height: 100% !important;
-                        }
+                div:-ms-fullscreen>canvas {
+                        width: 100% !important;
+                        height: 100% !important;
+                }
 
-                        div:-ms-fullscreen>canvas {
-                                width: 100% !important;
-                                height: 100% !important;
-                        }
+                div:fullscreen>canvas {
+                        width: 100% !important;
+                        height: 100% !important;
+                }
 
-                        div:fullscreen>canvas {
-                                width: 100% !important;
-                                height: 100% !important;
-                        }
+                * {
+                        margin: 0;
+                        padding: 0;
+                }
 
-                        * {
-                                margin: 0;
-                                padding: 0;
-                        }
+                /* to remove the top and left whitespace */
 
-                        /* to remove the top and left whitespace */
+                html,
+                body {
+                        width: 100%;
+                        height: 100%;
+                }
 
-                        html,
-                        body {
-                                width: 100%;
-                                height: 100%;
-                        }
+                /* just to be sure these are full screen*/
+                canvas {
+                        height: 100vh;
+                        width: 100vw;
+                        display: block;
+                }
+        </style>
 
-                        /* just to be sure these are full screen*/
-                        canvas {
-                                height: 100vh;
-                                width: 100vw;
-                                display: block;
-                        }
-
-  </style>                       
 </body>
+
 </html>

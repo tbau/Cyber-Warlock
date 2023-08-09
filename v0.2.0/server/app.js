@@ -12,11 +12,11 @@ app.use(express.json());
 app.use(express.static("public"));
 app.use(express.static("dist"));
 
-app.use('/images', express.static('images'));
-app.use('/libs', express.static('libs'));
-app.use('/models', express.static('models'));
-app.use('/managers',express.static('managers'));
-app.use('/scenes',express.static('scenes'));
+// app.use('/images', express.static('images'));
+// app.use('/libs', express.static('libs'));
+// app.use('/models', express.static('models'));
+// app.use('/managers',express.static('managers'));
+// app.use('/scenes',express.static('scenes'));
 
 app.get('/',(req, res) => {
     res.sendFile(HTML_FILE);
