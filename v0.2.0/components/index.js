@@ -5,9 +5,9 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import App from "./App";
 
 const appRouting = (
-  <Router basename={window.location.pathname}>
+  <Router>
     <Routes>
-      <Route path="/" element={<App/>} />
+      <Route path={`${window.location.pathname}/`} element={<App/>} />
     </Routes>
   </Router>
 );
