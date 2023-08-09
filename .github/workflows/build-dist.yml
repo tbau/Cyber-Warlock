@@ -19,7 +19,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: npm build
+      working-directory: ./v0.2.0
       run: |
-        cd v0.2.0
         npm install
         npm run build
