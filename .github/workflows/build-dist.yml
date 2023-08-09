@@ -1,18 +1,15 @@
-name: NodeJS with Webpack
+name: build-dist
 
 on:
-  push:
-    branches: [ "dev" ]
-  pull_request:
-    branches: [ "dev" ]
-
+  workflow_call:
+    
 jobs:
   build:
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [16.x]
 
     steps:
     - uses: actions/checkout@v3
