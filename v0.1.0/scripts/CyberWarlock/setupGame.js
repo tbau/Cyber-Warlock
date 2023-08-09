@@ -1,22 +1,22 @@
 ﻿var ui_layer = $("#ui-layer")[0];
-var ctx_ui = ui_layer.getContext("2d");
+var ctx_ui = ui_layer.getContext("2d", { willReadFrequently: true });
 
 var game_layer = $("#game-layer")[0];
-var ctx_game = game_layer.getContext("2d");
+var ctx_game = game_layer.getContext("2d", { willReadFrequently: true });
 
 var background_layer = $("#background-layer")[0];
-var ctx_background = background_layer.getContext("2d");
+var ctx_background = background_layer.getContext("2d", { willReadFrequently: true });
 
 var background_layer_pre = document.createElement("canvas");
 background_layer_pre.width = 5000;
 background_layer_pre.height = 5000;
 
-var ctx_background_pre = background_layer_pre.getContext("2d");
+var ctx_background_pre = background_layer_pre.getContext("2d", { willReadFrequently: true });
 
 var background_layer_collision = document.createElement("canvas");
 background_layer_collision.width = 5000;
 background_layer_collision.height = 5000;
-var ctx_background_collision = background_layer_collision.getContext("2d");
+var ctx_background_collision = background_layer_collision.getContext("2d", { willReadFrequently: true });
 
 
 var width = ui_layer.clientWidth;
