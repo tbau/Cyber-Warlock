@@ -5,8 +5,13 @@ import GameManager from '../managers/gameManager'
 import playScene from '../scenes/playScene';
 import menuScene from '../scenes/menuScene';
 import { RecoilRoot } from "recoil";
+import { useLocation } from 'react-router-dom'
 
 const App = () => {
+
+    const location = useLocation()
+    console.log(location.pathname);
+
     let uploadRef = React.useRef();
     let gamepad;
     function cleanString(input) {

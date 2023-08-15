@@ -1,14 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import { useLocation } from 'react-router-dom'
 
 import App from "./App";
 
 const appRouting = () => {
-
-  const location = useLocation()
-  console.log(location.pathname);
   return (
     <Router>
       <Routes>
@@ -18,4 +14,4 @@ const appRouting = () => {
   );
 }
 
-ReactDOM.render(appRouting, document.getElementById("root"));
+ReactDOM.render(React.createElement(appRouting), document.getElementById("root"));
