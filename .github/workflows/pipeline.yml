@@ -1,22 +1,30 @@
 name: Pipeline
-on:
-    push:
-      branches: [ "dev" ]   
-    workflow_dispatch:
 
-        # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+on:
+  push:
+    branches: ["dev"]
+  workflow_dispatch:
+
 permissions:
-    contents: read
-    pages: write
-    id-token: write
-  
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-         - uses: actions/checkout@v3
-    build-dist:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Run the build reusable workflow
+      - name: Build Project
         uses: ./.github/workflows/build-dist.yml
-    deploy-site:
-        needs: build-dist
+        id: build
+        with:
+          # Optional: pass inputs if your build workflow needs them
+
+      # Run the deploy reusable workflow
+      - name: Deploy Site
         uses: ./.github/workflows/deploy-site.yml
+        needs: build
+        with:
+          # Pass the build folder path
+          build-folder: ${{ steps.build.outputs.build-folder }}
