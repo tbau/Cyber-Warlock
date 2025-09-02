@@ -14,29 +14,32 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1. Checkout repository
+      # 1. Checkout the repository
       - uses: actions/checkout@v4
 
       # 2. Set up Node.js
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 16.x
 
-      # 3. Build the site
+      # 3. Build the project
       - name: Build site
         run: |
           cd v0.2.0
           npm install
           npm run build
 
-      # 4. Upload Pages artifact
-      - name: Upload Pages Artifact
+      # 4. Verify the build folder exists
+      - name: Verify build folder
+        run: ls -R v0.2.0/dist
+
+      # 5. Upload the artifact with the correct name
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: v0.2.0/dist
+          name: github-pages   # must match what deploy-pages expects
 
-      # 5. Deploy to GitHub Pages
+      # 6. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v2
